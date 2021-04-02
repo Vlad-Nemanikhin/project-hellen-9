@@ -1,12 +1,23 @@
-::after, ::before, * {
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*:after,
+*:before {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
 }
 
 img {
 	display: block;
 	max-width: 100%;
+	height: auto;
 }
 
 h1, h2, h3, h4, p {
@@ -19,12 +30,7 @@ a {text-decoration: none;}
 ul{
 	margin: 0;
 	padding: 0;
-}
-
-ul > li {
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 
 .visually-hidden {
