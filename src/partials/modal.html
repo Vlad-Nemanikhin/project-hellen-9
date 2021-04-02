@@ -1,0 +1,27 @@
+<!-- Разметка модального окна -->
+
+<div class="backdrop__is-hidden" style="display: none;">
+    <div class="modal">
+        <button class="modal__closebutton" data-modal-close>
+            <svg class="mobilemenu__closeicon" style="width: 15px; height: 15px;">
+                <use href="../images/symbol-defs-optimized.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="modal__formwrapper">
+            <h2 class="modal__header">Оставьте свои данные, мы Вам перезвоним</h2>
+            <form class="modal__form" action="submit">
+                <label for="name">Имя</label>
+                <div class="modal__input">
+                    <input type="name" name="name" placeholder="имя">
+                </div>
+                <label for="phone">Телефон</label>
+                <div class="modal__input">
+                    <input type="phone" name="phone" placeholder="телефон">
+                </div>
+                <label for="comment">Комментарий</label>
+                <textarea class="modal__textarea" name="comment" placeholder="Введите текст" rows="8"></textarea>
+                <button type="submit" class="modal__submitbutton">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
