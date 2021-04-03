@@ -1,0 +1,79 @@
+<header>
+
+    <!-- основной логотип -->
+    <h2 class="logo">
+        <p class="logo__top">
+            <a class="logo__topprefix">Hell</a>
+            <svg style="height: 30px; width: 22px;">
+                <use href="../images/symbol-defs-optimized.svg#icon-flame">
+                </use>
+            </svg>
+            <a class="logo__toppsuffix">en</a><br>
+        </p>
+        <p class="logo__bottom"><a class="logo__bottom--orange">адский</a>английский</p>
+    </h2>
+
+    <!-- панель навигации, будет отображаться только на десктопе -->
+
+    <nav class="header__navigation">
+        <ul class="header__navlist">
+            <li class="header__navlink" href="#">программы обучения</li>
+            <li class="header__navlink" href="#">о нас</li>
+            <li class="header__navlink" href="#">варианты обучения</li>
+            <li class="header__navlink" href="#">контакты</li>
+        </ul>
+    </nav>
+
+    <!-- кнопка открытия модального окна, будет отображаться только на планшете и десктопе -->
+
+    <button class="header__button">консультация по телефону</button>
+
+    <!-- кнопка открытия бургер-меню, будет отображаться только на смартфоне и планшете -->
+
+    <button class="mobilemenu__openbutton">
+        <svg class="mobilemenu__openicon" style="width: 25px; height: 12px;">
+            <use href="../images/symbol-defs-optimized.svg#icon-burger">
+            </use>
+        </svg>
+    </button>
+
+
+    <!-- разметка бургер-меню, только для планшета и смартфона -->
+
+    <div class="mobilemenu" style="display: none;">
+        <div class="mobilemenu__logowrapper">
+            <h2 class="logo">
+                <a class="logo__topprefix">Hell</a>
+                <svg style="height: 30px; width: 22px;">
+                    <use href="../images/symbol-defs-optimized.svg#icon-flame"></use>
+                </svg>
+                <a class="logo__toppsuffix">en</a><br>
+                <a class="logo__bottom">
+                    <a class="logo__bottom--orange">адский</a>
+                    английский
+                </a>
+            </h2>
+            <button class="mobilemenu__closebutton">
+                <svg class="mobilemenu__closeicon" style="width: 15px; height: 15px;">
+                    <use href="../images/symbol-defs-optimized.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobilemenu__navigation">
+            <ul>
+                <li class="mobilemenu__link" href="#">программы обучения</li>
+                <li class="mobilemenu__link" href="#">о нас</li>
+                <li class="mobilemenu__link" href="#">варианты обучения</li>
+                <li class="mobilemenu__link" href="#">контакты</li>
+            </ul>
+        </nav>
+
+        <!-- кнопка открытия модального окна из бургер-меню, будет отображаться только на смартфоне -->
+
+        <button class="header__button" data-modal-open>консультация по телефону</button>
+
+
+    </div>
+
+</header>
