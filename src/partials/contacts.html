@@ -1,17 +1,22 @@
-        <section>
-            <form>
-                <h3>
-                    Регистрация на <span>бесплатную</span> телефонную <span>консультацию</span> по нюансам ЗНО по английскому языку
-                </h3>
-                <p>
-                    Оставь заявку на участие в <span>бесплатном</span> занятии. С вами свяжется консультант и ответит на вопросы
-                </p>
-                <div>
-                    <input type="text" name="name" id="name" placeholder="Имя*"/>
-                </div>
-                <div>
-                    <input type="tel" name="tel" id="tel" placeholder="Телефон*"/>
-                </div>
-                <button type="submit">хочу на бесплатное занятие</button>
-            </form>
-        </section>
+<section class="contacts">
+    <div class="container">
+        <h2 class="contacts__title">
+            Регистрация на <span class="contacts__title--accent">бесплатную</span> телефонную <span
+                class="contacts__title--accent">консультацию</span> по нюансам ЗНО по английскому языку
+        </h2>
+        <form class="contacts__form">
+            <p class="form__text">
+                Оставь заявку на участие в <span class="form__text--accent">бесплатном</span> занятии. С вами свяжется
+                консультант и ответит на вопросы
+            </p>
+            <div class="contacts__input">
+                <input class="contacts__form-item" type="text" name="name" id="name" placeholder="Имя*"
+                    pattern="[a-z]{1,25}" title="Username should only contain lowercase letters. e.g. ivan ivanov" />
+                <input class="contacts__form-item" type="tel" name="tel" id="tel" placeholder="Телефон*"
+                    pattern="38[0-9]{3}-[0-9]{7}"
+                    title="Please enter your phone number in the format 38-(operator code)-xxx-xx-xx"/>
+            </div>
+            <button class="contacts__form-button" type="submit">хочу на бесплатное занятие</button>
+        </form>
+    </div>
+</section>
