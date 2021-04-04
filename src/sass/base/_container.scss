@@ -4,20 +4,15 @@
   max-width: 480px;
 
   margin: 0 auto;
-  padding-left: 21px;
+  padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;  делаем нижний паддинг на своей секции, а не здесь, на контейнере
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
-    padding-left: 183px;
-    padding-right: 183px;
-    padding-bottom: 130px;
   }
 }
