@@ -4,6 +4,8 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './base/variables'; // Вова добавил-подключил файл variables.scss
+
 @import './base/utils';
 @import './base/container';
 @import './components/header';
@@ -18,4 +20,3 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/footer';
-
