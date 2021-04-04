@@ -6,6 +6,7 @@
 // Стили для файла с примером HTML-фрагмента
 @import './base/utils';
 @import './base/container';
+@import './base/variables'; // Вова добавил-подключил файл variables.scss
 @import './components/header';
 @import './components/hero';
 @import './components/advantages';
@@ -18,4 +19,3 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/footer';
-
