@@ -1,6 +1,17 @@
 .container {
-	padding: 0 20px 0 21px;
-   margin: 0 auto;
-   width: 100%;
-	max-width: 480px;
+  width: 100%;
+  max-width: $mobile;
+
+  margin: 0 auto;
+  padding-left: 20px; // Влад ?
+  padding-right: 20px;
+  // padding-bottom: 50px;  делаем в каждой в своей секции, а не здесь (не в контейнере)
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
