@@ -1,0 +1,70 @@
+.guarantee__container {
+    @media screen and (max-width: 480px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.guarantee__title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    color: $main-text;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+    }
+}
+
+.guarantee__list {
+    background-color: $grey-background;    
+    margin-top: 30px;
+    padding: 30px 20px 31px 20px;
+
+    @media screen and (min-width: $tablet){
+        padding: 30px 50px 30px 79px;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-top: 50px;
+        padding: 50px 112px 45px 112px;
+    }
+}
+
+.guarantee__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: $grey-dark-text;
+    padding-left: 20px;
+
+    &:not(:last-child) {
+        padding-bottom: 23px;
+        border-left: 1px dashed $grey-text;
+    }
+
+    &::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 14.6px;
+    height: 20px;
+    background-image:url('/images/svg/flame.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $grey-background;
+    }
+
+    @media screen and (min-width:$tablet) {
+        &:not(:last-child) {
+        padding-bottom: 20px;
+    }
+    }
+}
+
+.guarantee__item-accent {
+    color: $accent;
+}
