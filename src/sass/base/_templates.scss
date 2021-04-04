@@ -3,8 +3,6 @@
 
 //Свойства текста без цвета "Hellen"
 %logo-text {
-	font-family: inherit;
-	font-style: normal;
 	font-weight: 800;
 	font-size: 26px;
 	line-height: 32px;
@@ -13,8 +11,6 @@
 
 //Свойства текста без цвета "Адский английский"
 %logo-sub {
-	font-family: inherit;
-	font-style: normal;
 	font-weight: bold;
 	font-size: 8px;
 	line-height: 10px;
@@ -32,46 +28,77 @@
 	color: rgba(17,21,24,1);
 }
 
-//Заголовки h2 размеры без цвета
-%sec-t {
-	font-family: inherit;
-	font-style: normal;
+//Заголовки h2 размеры без цвета desktop
+%sec-t-desktop {
 	font-weight: 800;
 	font-size: 46px;
 	line-height: 60%;
 	letter-spacing: 0.03em
 }
 
+
+//Заголовки h2 размеры без цвета tablet
+%sec-t-tablet {
+	font-weight: 800;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+	font-size: 26px;
+}
+
+
+//Заголовки h2 размеры без цвета tablet
+%sec-t-mobile{
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 130%;
+
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+
 //Контентный текст секций guaranties, advantages, problems, subtitle cards in affairs только размеры
-%text {
-	font-family: inherit;
-	font-style: normal;
-	font-weight: bold;
+%text-desktop {
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 28px;
 	letter-spacing: 0.08em;
+
 }
 
+%text-tablet-mobile {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+
+}
+
+
 //контентный текст без цвета для секций reviews, about, programs, affairs cards
-%descr {
-	font-family: inherit;
-	font-style: normal;
+%descr-desktop {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 28px;
 	letter-spacing: 0.08em;
 }
 
+%descr-tablet-mobile {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0.08em;
+}
+
 //Для buttons секции header, hero, contacts. Основной набор всех свойств кроме border, bacground, color
-%button {
+%button-desktop {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
    width: 354px;
 	height: 70px;
 
-	font-family: inherit;
-	font-style: normal;
+
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
@@ -79,10 +106,22 @@
 	text-transform: uppercase;
 }
 
+%button-tablet-mobile{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+   width: 260px;
+	height: 48px;
+
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
 //Для nav_link desctop
 %menu-d 	{
-	font-family: inherit;
-	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
@@ -93,8 +132,6 @@
 
 //Для nav__link mobile&tablet menu
 %menu-m-t {
-	font-family: inherit;
-	font-style: normal;
 	font-weight: 800;
 	line-height: 180%;
 
