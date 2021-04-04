@@ -1,0 +1,104 @@
+//Как это работает?
+//нужно вставить например в h2{@extend %sec-t;} и у вас стили все подтянулись. Добавляем только color и заголовок готов
+
+//Свойства текста без цвета "Hellen"
+%logo-text {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 32px;
+	letter-spacing: 0em;
+}
+
+//Свойства текста без цвета "Адский английский"
+%logo-sub {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	line-height: 10px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+//Заголовок h1
+%hero-t {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 130%;
+	letter-spacing: 0.03em;
+	color: rgba(17,21,24,1);
+}
+
+//Заголовки h2 размеры без цвета
+%sec-t {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 46px;
+	line-height: 60%;
+	letter-spacing: 0.03em
+}
+
+//Контентный текст секций guaranties, advantages, problems, subtitle cards in affairs только размеры
+%text {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.08em;
+}
+
+//контентный текст без цвета для секций reviews, about, programs, affairs cards
+%descr {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.08em;
+}
+
+//Для buttons секции header, hero, contacts. Основной набор всех свойств кроме border, bacground, color
+%button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+   width: 354px;
+	height: 70px;
+
+	font-family: inherit;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+//Для nav_link desctop
+%menu-d 	{
+	font-family: inherit;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+
+	color: rgba(185,185,185,1);
+}
+
+//Для nav__link mobile&tablet menu
+%menu-m-t {
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 180%;
+
+	letter-spacing: 0.03em;
+
+	color: rgba(255,255,255,1);
+}
