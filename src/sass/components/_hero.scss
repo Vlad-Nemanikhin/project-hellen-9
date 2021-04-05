@@ -1,0 +1,63 @@
+
+.hero {
+	padding-top: 46px;
+	width: 100%;
+	background-image: url("../images/hero/wave.svg");
+	background-repeat: repeat-x;
+	background-size: cover;
+	background-position: center;
+
+	&__wrapper {
+		margin-bottom: 30px;
+	}
+
+
+	&__title {
+		@extend %hero-t;
+		font-size: 20px;
+		margin-bottom: 41px;
+	}
+
+	&__text {
+		display: block;
+	
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: 0.08em;
+
+		&--grey {
+			font-weight: normal;
+			color: $grey-text;
+		}
+
+		&--common {
+			color: $main-text;
+		}
+
+		&--orange {
+			color: $accent;
+		}
+	}
+
+	&__link {
+		margin: 0 auto;
+		margin-top: 30px;
+		@extend %button-tablet-mobile;
+		background-color: $accent;
+		color: rgba(255, 255, 255, 1);
+		cursor: pointer;
+	}
+
+	&__thumb {
+		background-image: url("../images/hero/hero-fon.png");
+		background-repeat: no-repeat;
+		background-size: auto auto;
+		background-position: center;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
