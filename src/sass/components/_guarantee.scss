@@ -1,7 +1,8 @@
-.guarantee__container {
-    @media screen and (max-width: 480px) {
-        padding-left: 0;
-        padding-right: 0;
+.guarantee {
+    @media screen and (max-width:767px) {
+        background-image: linear-gradient(to bottom,
+        rgba(255,255,255,1) 14%,
+        $grey-background 14%);
     }
 }
 
@@ -18,12 +19,12 @@
 }
 
 .guarantee__list {
-    background-color: $grey-background;    
-    margin-top: 30px;
-    padding: 30px 20px 31px 20px;
+    padding: 60px 20px 31px 20px;
 
     @media screen and (min-width: $tablet){
+        margin-top: 30px;
         padding: 30px 50px 30px 79px;
+        background-color: $grey-background;
     }
 
     @media screen and (min-width: $desktop){
@@ -42,6 +43,7 @@
 
     &:not(:last-child) {
         padding-bottom: 23px;
+        margin-bottom: 4px;
         border-left: 1px dashed $grey-text;
     }
 
@@ -51,11 +53,13 @@
     left: -7px;
     top: 0;
     width: 14.6px;
-    height: 20px;
+    height: 24px;
     background-image:url('/images/svg/flame.svg');
+    background-color: $grey-background;
+    border-bottom: 4px solid $grey-background;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: $grey-background;
+    
     }
 
     @media screen and (min-width:$tablet) {
