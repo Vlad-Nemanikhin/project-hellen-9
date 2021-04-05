@@ -1,3 +1,113 @@
 #more {
   display: none;
 }
+
+.reviews {
+  text-align: center;
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 26px */
+    // text-align: center;
+    letter-spacing: 0.03em;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+    }
+  }
+}
+
+.slider {
+  &__list {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__ava-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__item-photo {
+    width: 90px;
+    margin-bottom: 20px;
+  }
+
+  &__item-icon {
+    fill: rgb(59, 89, 152);
+  }
+
+  &__item-name {
+    margin-bottom: 10px;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.08em;
+    // text-align: center;
+
+    color: $accent;
+  }
+
+  &__item-post {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: $grey-text;
+  }
+
+  &__item-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    color: $grey-dark-text;
+  }
+
+  &__text-btn {
+    border: none;
+    text-decoration: underline;
+    background: none;
+    color: $accent;
+  }
+
+  &__indic-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__indic-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
