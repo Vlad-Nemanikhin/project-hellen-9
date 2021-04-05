@@ -1,13 +1,13 @@
 .program{
     background-color: $black-background;
-    overflow-x: hidden;
-    overflow-y: visible;
     position: relative;
+
 }
 
 .container{
-    padding: 50px 24px;
+    position: relative;
 
+    padding: 50px 24px;
 
     @media screen and (min-width: $tablet) {
         padding: 60px 40px;
@@ -45,7 +45,7 @@
 .program__list--period{
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
+    padding-left: 96px;
 
     @media screen and (min-width: $tablet) {
         padding-left: 119px;
@@ -54,6 +54,7 @@
     @media screen and (min-width: $desktop) {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         padding-left: 0px;
 
     }
@@ -105,17 +106,32 @@
     @media screen and (min-width: 346px) {
         height: 1130px;
     }
+
     @media screen and (min-width: $tablet) {
         left:-56px;
         height: 660px;
     }
+
     @media screen and (min-width: $desktop) {
-        width: 2500px;
-        height: 1px;
-        top: -52px;
-        left: -500px; 
+        display: none;
     }
 }
+
+.program::before{
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: 296px;
+        content: '';
+        display: inline-flex;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+    }
+}
+
+
 
 .program__period{
     position: relative;
@@ -155,17 +171,6 @@
     }
 }
 
-
-// .program__description:last-child::after{
-//     background-image: url('/images/program/program_img_176.jpg');
-//     background-position: center center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     position: relative;
-//     height: 137px;
-//     text-align: center;
-// }
-
 .program__subject{
     font-weight: 700;
     font-size: 12px;
@@ -182,6 +187,7 @@
     @media screen and (min-width: $desktop) {
         margin-bottom: 10px;
         margin-top: 25px;
+        font-size: 20px;
     }
 }
 
@@ -192,6 +198,10 @@
     letter-spacing: 0.08em;
 
     color: rgba(185, 185, 185, 0.5);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+    }
 }
 
 .grammar{
@@ -222,7 +232,6 @@
 .writing{
     @media screen and (min-width: $tablet) {
         margin-right: 0px;
-
     }
 }
 
@@ -234,16 +243,53 @@
     @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
     }    
-
-
 }
 
+.container::after{
+    position: absolute;
+    content: '';
+    background: url(/images/program/program_img_176.jpg) 0 0 no-repeat;
+    width: 120px;
+    height: 137px;
+    bottom: -47px;
+    right: 0;
 
-// .program__image{
-//     position: absolute;
-//     left: 125px;
-//     bottom: -150px;
-// }
+    opacity: 0.5;
+
+    @media screen and (min-width: $tablet) {
+    background: url(/images/program/program_img_384.jpg) 0 0 no-repeat;
+    width: 384px;
+    height: 280px;
+    bottom: -110px;
+    left: 384px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    background: url(/images/program/program_img_760.jpg) 0 0 no-repeat;
+    width: 760px;
+    height: 502px;
+    bottom: -200px;
+    left: -200px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .container::after {
+    background-image: url(/images/program/program_img_352.jpg);
+
+        @media screen and (min-width: $tablet) {
+            background: url(/images/program/program_img_760.jpg) 0 0 no-repeat;
+        }
+
+        @media screen and (min-width: $desktop) {
+            background: url(/images/program/program_img_1512.jpg) 0 0 no-repeat;
+        }
+    }
+}
+
 
 
 //   @media screen and (min-width: $mobile) and (max-width: 767px) {
