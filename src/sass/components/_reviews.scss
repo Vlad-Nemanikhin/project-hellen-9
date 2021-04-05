@@ -9,6 +9,16 @@
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
   }
 
   &__title {
@@ -22,10 +32,13 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
       font-size: 26px;
+      text-shadow: none;
     }
 
     @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
       font-size: 46px;
     }
   }
@@ -43,6 +56,13 @@
 
     @media screen and (min-width: $tablet) {
       padding: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 82px;
+      padding-right: 112px;
     }
   }
 
@@ -78,6 +98,7 @@
 
     @media screen and (min-width: $tablet) {
       width: 150px;
+      max-width: inherit;
     }
   }
 
@@ -94,6 +115,16 @@
     letter-spacing: 0.08em;
 
     color: $accent;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__item-post {
@@ -110,6 +141,11 @@
     @media screen and (min-width: $tablet) {
       text-align: left;
     }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__item-text {
@@ -119,6 +155,11 @@
     /* or 167% */
 
     color: $grey-dark-text;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__text-btn {
@@ -132,12 +173,32 @@
     position: absolute;
     left: 20px;
     bottom: 65px;
+
+    @media screen and (min-width: $tablet) {
+      top: 230px;
+      left: 27px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 300px;
+      left: 35px;
+    }
   }
 
   &__control-next {
     position: absolute;
     right: 20px;
     bottom: 65px;
+
+    @media screen and (min-width: $tablet) {
+      top: 230px;
+      right: 27px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 300px;
+      right: 35px;
+    }
   }
 
   &__indic-list {
@@ -147,5 +208,17 @@
 
   &__indic-item:not(:last-child) {
     margin-right: 10px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+  }
+
+  &__indic-nonmobile {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
   }
 }
