@@ -6,6 +6,7 @@
   text-align: center;
 
   &__container {
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -15,9 +16,7 @@
 
     font-weight: 800;
     font-size: 20px;
-    line-height: 130%;
-    /* or 26px */
-    // text-align: center;
+    line-height: 26px;
     letter-spacing: 0.03em;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -41,6 +40,16 @@
     padding-right: 20px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: $tablet) {
+      padding: 40px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &__ava-wrapper {
@@ -50,11 +59,26 @@
     align-items: center;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-right: 46px;
+    }
+  }
+
+  &__text-wrapper {
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
   }
 
   &__item-photo {
     width: 90px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      width: 150px;
+    }
   }
 
   &__item-icon {
@@ -67,9 +91,7 @@
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
     letter-spacing: 0.08em;
-    // text-align: center;
 
     color: $accent;
   }
@@ -84,6 +106,10 @@
     letter-spacing: 0.08em;
 
     color: $grey-text;
+
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
   }
 
   &__item-text {
@@ -100,6 +126,18 @@
     text-decoration: underline;
     background: none;
     color: $accent;
+  }
+
+  &__control-prev {
+    position: absolute;
+    left: 20px;
+    bottom: 65px;
+  }
+
+  &__control-next {
+    position: absolute;
+    right: 20px;
+    bottom: 65px;
   }
 
   &__indic-list {
