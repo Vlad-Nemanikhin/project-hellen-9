@@ -1,6 +1,6 @@
 .contacts {
     background-color: $main-text;
-    background-image: url('/src/images/contacts/bcg.png');
+    background-image: url('/src/images/contacts/bcg.jpg');
     padding: 50px 20px;
     width: 100%;
     background-size: cover;
@@ -23,7 +23,8 @@
     @media (min-width: $desktop) {
         margin-bottom: 50px;
     }
-}
+}y
+
 
 .form__text {
     margin-bottom: 30px;
