@@ -1,0 +1,86 @@
+.contacts {
+    background-color: $main-text;
+    background-image: url('/src/images/contacts/bcg.jpg');
+    padding: 50px 20px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        padding: 50px 40px 71px 40px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 100px 295px 62px 295px;
+    }
+}
+
+.contacts__title {
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
+}
+
+
+.form__text {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 56px;
+    }
+}
+
+.contacts__form-item {
+    padding: 23px 40px;
+    background: transparent;
+    max-width: 280px;
+    margin-bottom: 30px;
+    
+    @media (min-width: $tablet) {
+        max-width: 390px;
+        margin-bottom: 30px;
+    }
+    
+    @media (min-width: $desktop) {
+        max-width: 478px;
+        margin-bottom: 40px;
+    }
+}
+
+.contacts__form-item:last-child {
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 31px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 80px;
+    }
+}
+
+.contacts__form-item:invalid {
+    border-color: red;
+}
+
+.contacts__title--accent,
+.form__text--accent {
+    color: $accent;
+}
+
+.contacts__form-button {
+    padding: 27px 25px 26px 26px;
+    background-color: $accent;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    border-style: none;
+}
+
