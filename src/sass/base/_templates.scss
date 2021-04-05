@@ -23,7 +23,7 @@
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 800;
-	line-height: 130%;
+	line-height: 136%;
 	letter-spacing: 0.03em;
 	color: rgba(17,21,24,1);
 }
@@ -92,11 +92,10 @@
 
 //Для buttons секции header, hero, contacts. Основной набор всех свойств кроме border, bacground, color
 %button-desktop {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-   width: 354px;
-	height: 70px;
+   padding: 27px 25px 26px 26px;
 
 
 	font-weight: bold;
@@ -106,12 +105,25 @@
 	text-transform: uppercase;
 }
 
+%button-tablet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   padding: 17px 9px 16px 10px;
+
+
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
 %button-tablet-mobile{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-   width: 260px;
-	height: 48px;
+   padding: 14px 1px;
 
 	font-weight: bold;
 	font-size: 12px;
