@@ -194,17 +194,48 @@
     color: rgba(185, 185, 185, 0.5);
 }
 
-.program__portion{
+.grammar{
     @media screen and (min-width: $tablet) {
+        display:block;
+        width: 176px;
         margin-right: 50px;
     }
-}    
+
+    @media screen and (min-width: $desktop) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.vocabulary{
+    @media screen and (min-width: $tablet) {
+        width: 155px;
+        margin-right: 50px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.writing{
+    @media screen and (min-width: $tablet) {
+        margin-right: 0px;
+
+    }
+}
+
+
+
 .program__portion:not(:last-child){
     margin-bottom: 8px;
 
     @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
     }    
+
+
 }
 
 
