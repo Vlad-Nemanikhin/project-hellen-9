@@ -36,7 +36,7 @@
 	}
 
 	&__page-container {
-		@media screen and (min-width: $tablet) and (max-width: $desktop) {
+		@media screen and (min-width: $tablet) and (max-width: 1279px) {
 			margin: 0 auto;
 			width: $tablet;
 			overflow: hidden;
