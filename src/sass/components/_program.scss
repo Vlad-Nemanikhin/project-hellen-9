@@ -245,10 +245,11 @@
     }    
 }
 
-.container::after{
+.program__picture::after{
     position: absolute;
     content: '';
-    background: url(/images/program/program_img_176.jpg) 0 0 no-repeat;
+    background: url(/images/program/program_img_176.jpg);
+    background-repeat: no-repeat;
     width: 120px;
     height: 137px;
     bottom: -47px;
@@ -257,7 +258,8 @@
     opacity: 0.5;
 
     @media screen and (min-width: $tablet) {
-    background: url(/images/program/program_img_384.jpg) 0 0 no-repeat;
+    background: url(/images/program/program_img_384.jpg);
+    background-repeat: no-repeat;
     width: 384px;
     height: 280px;
     bottom: -110px;
@@ -265,7 +267,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-    background: url(/images/program/program_img_760.jpg) 0 0 no-repeat;
+    background: url(/images/program/program_img_760.jpg);
+    background-repeat: no-repeat;
     width: 760px;
     height: 502px;
     bottom: -200px;
@@ -281,11 +284,13 @@
     background-image: url(/images/program/program_img_352.jpg);
 
         @media screen and (min-width: $tablet) {
-            background: url(/images/program/program_img_760.jpg) 0 0 no-repeat;
+            background: url(/images/program/program_img_760.jpg);
+    background-repeat: no-repeat;
         }
 
         @media screen and (min-width: $desktop) {
-            background: url(/images/program/program_img_1512.jpg) 0 0 no-repeat;
+            background: url(/images/program/program_img_1512.jpg);
+    background-repeat: no-repeat;
         }
     }
 }
