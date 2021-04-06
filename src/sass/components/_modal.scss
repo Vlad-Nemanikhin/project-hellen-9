@@ -1,0 +1,160 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(168, 118, 118, 0.2);
+  opacity: 1;
+  overflow: hidden;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    transition: opacity var(--animtrans);
+
+    & .modal {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  max-width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(17, 21, 24, 0.9);
+
+  @media (min-width: $tablet) {
+    max-width: 450px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 528px;
+  }
+
+  &__closebutton {
+    width: 30px;
+    height: 30px;
+    margin: 8px 8px 0 auto;
+    border: none;
+    background-color: rgba(17, 21, 24, 0);
+    color: $accent;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  &__closeicon {
+    height: 15px;
+    width: 15px;
+    stroke: $accent;
+  }
+
+  &__formwrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 20px 40px;
+  }
+
+  &__header {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    color: $accent;
+    margin-bottom: 12px;
+  }
+
+  &__form {
+    display: inherit;
+    flex-direction: inherit;
+
+    & > label {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.166;
+      text-align: left;
+      color: var(--grey);
+      margin-top: 10px;
+    }
+  }
+
+  &__input {
+    position: relative;
+    margin-top: 4px;
+  }
+
+  &__input > input {
+    width: 100%;
+    height: 40px;
+    padding-left: 16px;
+    background-color: rgba(17, 21, 24, 0);
+    border: 2px solid $accent;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    text-align: left;
+    outline: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      border-color: $accent;
+      cursor: pointer;
+    }
+  }
+
+  &__form > textarea {
+    width: 100%;
+    background-color: rgba(17, 21, 24, 0);
+    border: 2px solid $accent;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    text-align: left;
+    outline: none;
+  }
+
+  &__textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px 12px 16px;
+  }
+
+  &__submitbutton {
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: none;
+    vertical-align: baseline;
+    background-color: $accent;
+    font-weight: 700;
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+}
