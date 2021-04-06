@@ -29,6 +29,7 @@
     margin-left: -20px;
     margin-top: -15px;
     background-color: $white-color;
+    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
         margin-left: -20px;
@@ -53,6 +54,7 @@
     align-items: center;
     position: relative;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    transition: color $time $function;
 
     &:hover,
     &:focus {
@@ -81,6 +83,7 @@
 .affairs__img {
     margin-bottom: 20px;
     fill: $accent;
+    transition: color $time $function;
 
     .affairs__item:hover &,
     .affairs__item:focus & {
@@ -115,6 +118,7 @@
         top: 160px;
         transform: translate(-50%, -50%);
         background-color: $accent;
+        transition: color $time $function;
 
         .affairs__item:hover &,
         .affairs__item:focus & {
@@ -142,6 +146,7 @@
 
     padding-left: 10px;
     padding-right: 10px;
+    transition: color $time $function;
 
     .affairs__item:hover &,
     .affairs__item:focus & {

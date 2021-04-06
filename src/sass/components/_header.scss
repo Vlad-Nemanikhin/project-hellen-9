@@ -83,6 +83,7 @@ header .container {
   line-height: 1.22;
   white-space: nowrap;
   text-transform: uppercase;
+  transition: color $time $function;
 
   & > a:link,
   & > a:visited {
@@ -287,6 +288,7 @@ header .container {
   font-size: 20px;
   line-height: 1.8;
   letter-spacing: 0.03;
+  transition: color $time $function;
 
   & > a:link,
   & > a:visited {
