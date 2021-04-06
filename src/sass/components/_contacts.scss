@@ -32,20 +32,20 @@
         rgba(17, 21, 24, 0.8)
     ), url('../images/contacts/tabl.jpg');
         background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+            to right,
+            rgba(17, 21, 24, 0.8),
+            rgba(17, 21, 24, 0.8)
+        ), url('../images/contacts/tabl2x.jpg');
+            background-size: cover;
+        }
     }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-        to right,
-        rgba(17, 21, 24, 0.8),
-        rgba(17, 21, 24, 0.8)
-    ), url('../images/contacts/tabl2x.jpg');
-        background-size: cover;
-    }
-
-        @media (min-width: $tablet) {
+        @media (min-width: $desktop) {
         width: 100%;
         background-image: linear-gradient(
         to right,
@@ -53,24 +53,22 @@
         rgba(17, 21, 24, 0.8)
     ), url('../images/contacts/bcg.jpg');
         background-size: cover;
-    }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-        to right,
-        rgba(17, 21, 24, 0.8),
-        rgba(17, 21, 24, 0.8)
-    ), url('../images/contacts/bcg2x.jpg');
-        background-size: cover;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+            to right,
+            rgba(17, 21, 24, 0.8),
+            rgba(17, 21, 24, 0.8)
+        ), url('../images/contacts/bcg2x.jpg');
+            background-size: cover;
+        }
     }
-
 }
 
 .contacts__wrapper {
     display: inline-block;
-
 }
 
 .contacts__title {
