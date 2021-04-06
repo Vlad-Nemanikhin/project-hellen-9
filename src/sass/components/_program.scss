@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.container{
+.program__picture{
     position: relative;
 
     padding: 50px 24px;
@@ -36,7 +36,7 @@
 
     @media screen and (min-width: $desktop) {
         margin-bottom: 160px;
-        margin-top: 70px;
+        margin-top: 60px;
         font-size: 46px;
     }
 }
