@@ -1,0 +1,111 @@
+.benefits {
+    // padding-top: 40px;
+    // padding-bottom: 50px;
+    max-width: 480px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $tablet){
+        display: flex;
+        max-width: 768px;
+        min-width: 768px;
+    }
+    @media screen and (min-width: $desktop){
+        max-width: 1280px;
+        min-width: 1280px;
+        }
+}
+
+.benefits__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 136%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: $main-text;
+    width: 180px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet){
+        width: auto;
+        text-align: center;
+        font-size: 26px;
+        line-height: 1.307;
+    }
+    @media screen and (min-width: $desktop){
+        display: none;
+    }
+
+}
+
+// .benefits__list {
+//     list-style-type: none; /* Убираем исходные маркеры */
+//     counter-reset:  item; /* Обнуляем счетчик списка */
+//    }
+// .benefits__item:before {
+//     content: counter(item) '- 01 '; /* Добавляем к числам скобку */
+//     counter-increment: item; /* Задаём имя счетчика */
+//    }
+
+
+.benefits__list {
+    // max-width: 216px;
+    list-style-type:decimal-leading-zero;
+    list-style-position:inside;
+    color: $accent;
+    padding-left: 30px;
+    padding-right: 14px;
+    background-color: #eef115;
+    @media screen and (min-width: $tablet){
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 98px;
+    padding-right: 118px;
+    }
+    @media screen and (min-width: $desktop){
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 84px;
+        padding-right: 82px;
+
+    }
+}
+
+.benefits__item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.429;
+    align-items: center;
+    letter-spacing: 0.08em;
+    content: counter(level1) " ";
+    counter-increment: level1;
+    @media screen and (min-width: $tablet){
+    flex-basis: calc(50% - 20px);
+    margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop){
+        font-size: 20px;
+        line-height: 1.4;
+        flex-basis: calc(33.33333% - 20px);
+        margin-top: 32px;
+    }
+}
+.benefits__item::before {
+    content: "-";
+    width: 20px;
+    height: 2px;
+    color: $accent;
+}
+
+.benefits__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.428;
+    // display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: $main-text;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
