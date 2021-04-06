@@ -248,7 +248,7 @@
 .program__picture::after{
     position: absolute;
     content: '';
-    background: url(/images/program/program_img_176.jpg);
+    background: url(../images/program/program_img_176.jpg);
     background-repeat: no-repeat;
     width: 120px;
     height: 137px;
@@ -258,7 +258,7 @@
     opacity: 0.5;
 
     @media screen and (min-width: $tablet) {
-    background: url(/images/program/program_img_384.jpg);
+    background: url(../images/program/program_img_384.jpg);
     background-repeat: no-repeat;
     width: 384px;
     height: 280px;
@@ -267,7 +267,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-    background: url(/images/program/program_img_760.jpg);
+    background: url(../images/program/program_img_760.jpg);
     background-repeat: no-repeat;
     width: 760px;
     height: 502px;
@@ -281,15 +281,15 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .container::after {
-    background-image: url(/images/program/program_img_352.jpg);
+    background-image: url(../images/program/program_img_352.jpg);
 
         @media screen and (min-width: $tablet) {
-            background: url(/images/program/program_img_760.jpg);
+            background: url(../images/program/program_img_760.jpg);
     background-repeat: no-repeat;
         }
 
         @media screen and (min-width: $desktop) {
-            background: url(/images/program/program_img_1512.jpg);
+            background: url(../images/program/program_img_1512.jpg);
     background-repeat: no-repeat;
         }
     }
