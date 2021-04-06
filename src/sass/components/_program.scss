@@ -249,6 +249,7 @@
     content: '';
     background: url(../images/program/program_img_176.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
     width: calc(100% - 200px);
     height: 137px;
     bottom: -47px;
@@ -259,6 +260,7 @@
     @media screen and (min-width: $tablet) {
     background: url(../images/program/program_img_384.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
     width: 384px;
     height: 280px;
     bottom: -110px;
@@ -268,6 +270,7 @@
     @media screen and (min-width: $desktop) {
     background: url(../images/program/program_img_760.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
     width: 760px;
     height: 502px;
     bottom: -200px;
@@ -284,12 +287,14 @@
 
         @media screen and (min-width: $tablet) {
             background: url(../images/program/program_img_760.jpg);
-    background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
 
         @media screen and (min-width: $desktop) {
             background: url(../images/program/program_img_1512.jpg);
-    background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
 }
