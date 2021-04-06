@@ -1,18 +1,15 @@
 .footer {
-    height: 296px;
     background-image: linear-gradient(to top,
     $black-background 27%,
     rgba(255,255,255,1) 27%);
 
     @media screen and (min-width: $tablet) {
-        height: 195px;
         background-image: linear-gradient(to top,
         $black-background 35%,
         rgba(255,255,255,1) 35%);
     }
 
     @media screen and (min-width: $desktop) {
-        height: 220px;
         background-image: linear-gradient(to top,
         $black-background 30%,
         rgba(255,255,255,1) 30%);
@@ -40,18 +37,18 @@
 
 .footer__logomain {
     @extend %logo-text;
-    color: black;
+    color: $main-text;
 }
 
 .footer__logoadd {
     @extend %logo-text;
     text-transform: uppercase;
-    color: black;
+    color: $main-text;
 }
 
 .footer__logotext {
     @extend %logo-sub;
-    color: black;
+    color: $main-text;
 }
 
 .logo__icon {
@@ -137,13 +134,15 @@
 }
 
 .footer__copyright {
-    margin-top: 27px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
     color: $grey-text;
 
     @media screen and (min-width: $tablet) {
-        margin-top: 22px;
+        padding-top: 22px;
+        padding-bottom: 22px;
     }
 }
