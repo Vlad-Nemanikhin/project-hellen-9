@@ -1,5 +1,5 @@
 .about {
-    padding-top: 40px;
+    padding-top: 270px;
     padding-bottom: 50px;
     max-width: 480px;
     margin-left: auto;
@@ -7,12 +7,12 @@
     @media screen and (min-width: $tablet){
         display: flex;
         max-width: 768px;
-        padding-top: 50px;
+        padding-top: 302px;
         padding-bottom: 50px;   
     }
     @media screen and (min-width: $desktop){
         max-width: 1280px;
-        padding-top: 130px;
+        padding-top: 329px;
         padding-bottom: 130px;
         }
 }
@@ -37,6 +37,10 @@
 
 .about__list {
     margin-bottom: 32px;
+    @media screen and (min-width: $desktop){
+        margin-bottom: 63px;
+    }
+
 }
 
 .about__item {
@@ -73,6 +77,7 @@
     left: -27px;
     @media screen and (min-width: $desktop){
         left: -60px; 
+        margin-top: 31px;
     }
 }
 
@@ -116,10 +121,15 @@
     display: block;
     background: $grey-text;
     transform: translate(0, 100%) rotate(0deg);
+    @media screen and (min-width: $desktop){
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
 }
 
 .about__description {
     margin-top: 20px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.666;
@@ -127,6 +137,7 @@
     @media screen and (min-width: $desktop){
         font-size: 18px;
         line-height: 1.555;
+        margin-bottom: 22px;
     }
 }
 
@@ -150,11 +161,11 @@
     line-height: 1.666;
     color: $accent;
     text-decoration: underline;
-    margin-top: 10px;
+    
     @media screen and (min-width: $desktop){
         font-size: 18px;
         line-height: 1.555;
-        margin-top: 20px;
+        
     }
 }
 
