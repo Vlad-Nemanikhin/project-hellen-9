@@ -2,6 +2,8 @@
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
+    top: 5102px;
     @media screen and (min-width: $tablet){
         display: flex;
         max-width: 768px;
@@ -17,7 +19,6 @@
     line-height: 136%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    background: $main-text;
     width: 180px;
     margin-bottom: 30px;
     @media screen and (min-width: $tablet){
@@ -29,18 +30,18 @@
     @media screen and (min-width: $desktop){
         display: none;
     }
-
 }
 
+
 .benefits__list {
-    list-style-type:decimal-leading-zero;
-    list-style-position:inside;
+    counter-reset: item;
+    list-style-type: none;
     color: $accent;
     padding-left: 30px;
     padding-right: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #eef115;
+    background-color: #FFFFFF;
     @media screen and (min-width: $tablet){
         width: 100%;
     display: flex;
@@ -53,13 +54,10 @@
         padding-bottom: 70px;
         padding-left: 84px;
         padding-right: 82px;
-
     }
 }
 
 .benefits__item {
-    content: counter(level1) " ";
-    counter-increment: level1;
     @media screen and (min-width: $tablet){
     flex-basis: calc(50% - 20px);
     margin-top: 30px;
@@ -70,25 +68,76 @@
         flex-basis: calc(33.33333% - 20px);
         margin-top: 32px;
     }
+    &:before {
+        /*counter-increment: myCounter;
+        content:counter(myCounter);*/
+        content: counter(item, decimal-leading-zero) " "; 
+        counter-increment: item;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.643;
+        margin-left: 20px;
+        @media screen and (min-width: $tablet) {
+            margin-left: 25px;
+        }
+        @media screen and (min-width: $desktop) {
+        font-size: 20px;
+        margin-left: 32px;
+        }
+    }
+    
 }
 
-.benefits__item::marker {
+.benefits__dash {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.643;
-    @media screen and (min-width: $desktop){
+    margin: 0;
+    padding: 0;
+    top: 100px;
+    position: relative;
+    left: -40px;
+    top: 0;
+    @media screen and (min-width: $tablet){
+        left: -47px;
+        }
+        @media screen and (min-width: $desktop){
         font-size: 20px;
-    }
+        left: -64px;
+        }
 }
+// .benefits__item {
+//     content: counter(level1) " ";
+//     counter-increment: level1;
+//     @media screen and (min-width: $tablet){
+//     flex-basis: calc(50% - 20px);
+//     margin-top: 30px;
+//     }
+//     @media screen and (min-width: $desktop){
+//         font-size: 20px;
+//         line-height: 1.4;
+//         flex-basis: calc(33.33333% - 20px);
+//         margin-top: 32px;
+//     }
+// }
 
-.benefits__item::before {
-    content: "- ";
-    width: 20px;
-    height: 2px;
+// .benefits__item::marker {
+//     font-weight: bold;
+//     font-size: 14px;
+//     line-height: 1.643;
+//     @media screen and (min-width: $desktop){
+//         font-size: 20px;
+//     }
+// }
+
+// .benefits__item::before {
+//     content: "- ";
+//     width: 20px;
+//     height: 2px;
    
-    color: $accent;;
+//     color: $accent;;
     
-}
+// }
 
 .benefits__text {
     font-weight: bold;
