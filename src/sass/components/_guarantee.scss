@@ -1,5 +1,11 @@
 .guarantee {
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:$mobile) {
+        background-image: linear-gradient(to bottom,
+        rgba(255,255,255,1) 10%,
+        $grey-background 10%);
+    }
+
+    @media screen and (min-width:$mobile) and (max-width:767px) {
         background-image: linear-gradient(to bottom,
         rgba(255,255,255,1) 14%,
         $grey-background 14%);
@@ -59,7 +65,13 @@
     border-bottom: 4px solid $grey-background;
     background-size: contain;
     background-repeat: no-repeat;
-    
+
+       @media screen and (min-width:$desktop) {
+           left: -9px;
+           width: 22px;
+           height: 30px;
+       }
+
     }
 
     @media screen and (min-width:$tablet) {
@@ -67,6 +79,13 @@
         padding-bottom: 20px;
     }
     }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 20px;
+        line-height: 28px;
+        padding-left: 30px;
+    }
+    
 }
 
 .guarantee__item-accent {
