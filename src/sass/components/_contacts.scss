@@ -1,44 +1,44 @@
 .contacts {
     background-color: $main-text;
-
     width: 100%;
-    height: auto;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     color: $white-color;
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/contacts/mobile.jpg');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/contacts/mobile2x.jpg');
     background-size: cover;
     }
 
     @media (min-width: $tablet) {
         width: 100%;
-
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/contacts/tablet.jpg');
         background-size: cover;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/contacts/tablet2x.jpg');
         background-size: cover;
     }
 
         @media (min-width: $desktop) {
         width: 100%;
-
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/contacts/bcg.jpg');
         background-size: cover;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url('../images/contacts/bcg2x.jpg');
         background-size: cover;
     }
 
