@@ -1,3 +1,224 @@
 #more {
   display: none;
 }
+
+.reviews {
+  text-align: center;
+
+  &__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: $tablet) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 95px;
+      padding-right: 95px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+      font-size: 26px;
+      text-shadow: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      font-size: 46px;
+    }
+  }
+}
+
+.slider {
+  &__list {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: $tablet) {
+      padding: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 82px;
+      padding-right: 112px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__ava-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-right: 46px;
+    }
+  }
+
+  &__text-wrapper {
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+
+  &__item-photo {
+    width: 90px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      width: 150px;
+      max-width: inherit;
+    }
+  }
+
+  &__item-icon {
+    fill: rgb(59, 89, 152);
+  }
+
+  &__item-name {
+    margin-bottom: 10px;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+
+    color: $accent;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__item-post {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: $grey-text;
+
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    color: $grey-dark-text;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &__text-btn {
+    border: none;
+    text-decoration: underline;
+    background: none;
+    color: $accent;
+  }
+
+  &__control-prev {
+    position: absolute;
+    left: 20px;
+    bottom: 65px;
+
+    @media screen and (min-width: $tablet) {
+      top: 230px;
+      left: 27px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 300px;
+      left: 35px;
+    }
+  }
+
+  &__control-next {
+    position: absolute;
+    right: 20px;
+    bottom: 65px;
+
+    @media screen and (min-width: $tablet) {
+      top: 230px;
+      right: 27px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 300px;
+      right: 35px;
+    }
+  }
+
+  &__indic-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__indic-item:not(:last-child) {
+    margin-right: 10px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
+  }
+
+  &__indic-nonmobile {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+}
