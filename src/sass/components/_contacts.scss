@@ -4,7 +4,7 @@
         to right,
         rgba(17, 21, 24, 0.8),
         rgba(17, 21, 24, 0.8)
-    ), url('../images/contacts/mob.jpg');
+    ), url('../images/contacts/mobile.jpg');
     width: 100%;
     height: auto;
     background-size: cover;
@@ -20,7 +20,7 @@
         to right,
         rgba(17, 21, 24, 0.8),
         rgba(17, 21, 24, 0.8)
-    ), url('../images/contacts/mob2x.jpg');
+    ), url('../images/contacts/mobile2x.jpg');
     background-size: cover;
     }
 
@@ -30,7 +30,7 @@
         to right,
         rgba(17, 21, 24, 0.8),
         rgba(17, 21, 24, 0.8)
-    ), url('../images/contacts/tabl.jpg');
+    ), url('../images/contacts/tablet.jpg');
         background-size: cover;
     }
 
@@ -41,11 +41,11 @@
         to right,
         rgba(17, 21, 24, 0.8),
         rgba(17, 21, 24, 0.8)
-    ), url('../images/contacts/tabl2x.jpg');
+    ), url('../images/contacts/tablet2x.jpg');
         background-size: cover;
     }
 
-        @media (min-width: $tablet) {
+        @media (min-width: $desktop) {
         width: 100%;
         background-image: linear-gradient(
         to right,
