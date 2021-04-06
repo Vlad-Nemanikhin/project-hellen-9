@@ -1,39 +1,53 @@
 
 .hero {
 	padding-top: 70px;
-	width: 100%;
+	margin: 0 auto;
 	background-image: url("../images/hero/wave.svg");
-	
+	width: $mobile;
 
    //@media screen and (min-width: 1280px) {
    //background-image: url("../images/hero/wave-3.svg");
 	//}
 
 
-	background-repeat: repeat-x;
-	background-position: -250px 20px;
-	background-size: cover;
+		background-repeat: no-repeat;
+		background-position: -250px 20px;
+		background-size: cover;
 
-	@media screen and (min-width: 768px) {
-		position: relative;
-		overflow: hidden;
-		width: $desktop;
-		margin: 0 auto;
-		height: 445.5px;
-		background-repeat: repeat-x;
-	background-position: 100px 100px;
-	background-size: cover;
+	@media screen and (min-width:$tablet) {
+		width: $tablet;
+		padding-bottom: 70px;
+		background-repeat: no-repeat;
+		background-position: left 20px;
+		background-size: cover;
+		overflow-x: hidden;
 	}
 
-	@media screen and (min-width: 1680px) {
-		padding: 46px 0 96px 0;
-		height: auto;
-		background-repeat: repeat-x;
-	background-position: left bottom;
-	background-size: cover;
+	@media screen and (min-width: $desktop) {
+		padding-top: 125px;
+		padding-bottom: 145px;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		background-size: cover;
+		width: $desktop;
+		overflow-x: none;
+		width: 100%;
+		max-width: 1680px;
+	}
+
+	&__page-container {
+		@media screen and (min-width: $tablet) and (max-width: $desktop) {
+			margin: 0 auto;
+			width: $tablet;
+			overflow: hidden;
+		}
 	}
 
 	&__container {
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+
 		@media screen and (min-width: 320px) and (max-width: $mobile) {
 		max-width: $mobile;
 	}
@@ -41,39 +55,35 @@
 	@media screen and (min-width: $mobile) and (max-width: 767px) {
 	width: $mobile;
 	}
-		margin: 0 auto;
-		padding-left: 20px;
-		padding-right: 20px;
+		
 
-		@media screen and (min-width: 768px) {
-		position: absolute;
-		top: 0;
-		left: 43px;
-		display: flex;
-		align-items: flex-start;
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			justify-content: space-around;
 		width: $tablet;
 		padding-left: 0;
 		padding-right: 0;
+		margin-left: 43px;
+		margin-right: -43px;
 		}
 
-		@media screen and (min-width: 1280px) {
-		position: relative;
-		padding-top: 0;
-		width: $desktop;
+		@media screen and (min-width: $desktop) {
+		padding-left: auto;
+		padding-right: auto;
+		margin-left: 62px;
+		width: 100%;
 		display: flex;
 		align-items: flex-start;
-		padding: 0 40px 0 40;
 		}
 	}
 
 	&__wrapper {
 		margin-bottom: 30px;
-		@media screen and (min-width: 768px) {
-			padding-top: 70px;
+		@media screen and (min-width: $tablet) {
 			margin-bottom: 0;
 		}
 
-		@media screen and (min-width: 1680px) {
+		@media screen and (min-width: $desktop) {
 			padding-top: 79px;
 			margin-bottom: 0;
 		}
@@ -85,7 +95,7 @@
 		font-size: 20px;
 		margin-bottom: 30px;
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: $tablet) {
 		font-weight: 800;
 		font-size: 26px;
 		line-height: 130%;
@@ -93,7 +103,7 @@
 		color: $main-text;
 		}
 
-		@media screen and (min-width: 1680px) {
+		@media screen and (min-width: $desktop) {
 			margin-bottom: 24px;
 			font-size: 58px;
 			line-height: 130%;
@@ -102,7 +112,7 @@
 		}
 
 		&--wrap {
-			@media screen and (min-width: 1680px) {
+			@media screen and (min-width: $desktop) {
 				display: block;
 			}
 		}
@@ -123,14 +133,14 @@
 
 		&--common {
 			color: $main-text;
-			@media screen and (min-width: 1680px) {
+			@media screen and (min-width: $desktop) {
 				display: inline-block;
 			}
 		}
 
 		&--orange {
 			color: $accent;
-			@media screen and (min-width: 1680px) {
+			@media screen and (min-width: $desktop) {
 				display: inline-block;
 			}
 		}
@@ -144,7 +154,7 @@
 		color: rgba(255, 255, 255, 1);
 		cursor: pointer;
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: $tablet) {
 			display: flex;
 		justify-content: center;
 		align-items: center;
@@ -157,7 +167,7 @@
 		text-transform: uppercase;
 		}
 
-			@media screen and (min-width: 1680px) {
+			@media screen and (min-width: $desktop) {
 		
 			display: flex;
 			justify-content: center;
@@ -182,14 +192,13 @@
 		background-image: url("../images/hero/hero-fon.png");
 		background-position: left 10px;
 		background-repeat: no-repeat;
-		overflow: hidden;
-		z-index: 99;
 
-   	@media screen and (min-width: 768px) {
-			position: absolute;
+   	@media screen and (min-width: $tablet) {
+			position: relative;
 			overflow: hidden;
-			right: -10px;
-			top: 70px;
+			margin-left: auto;
+			right: -40px;
+			bottom: -43px;
    background-image: url("../images/hero/hero-fon-2.png");
 	background-size: 376px 269px;
 	background-position: left 21px;
@@ -198,12 +207,13 @@
 	height: 321px;
    }
 
-   	@media screen and (min-width: 1680px) {
+   	@media screen and (min-width: $desktop) {
 			position: relative;
-			margin: 0;
+			margin: 0 auto;
 			display: flex;
 			justify-content: start;
 			align-self: start;
+			align-content: flex-start;
    background-image: url("../images/hero/hero-fon-3.png");
 	background-size: 842px 602px;
 	background-position: left 31px;
@@ -225,19 +235,20 @@
 			height: 100%;
 		}
 
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: $tablet) {
 			position: absolute;
 			left: 43px;
 			top: 0;
 			width: 321px;
 			height: 100%;
 		}
-		@media screen and (min-width: 1680px) {
-			width: 719px;
-			height: 100%;
+		@media screen and (min-width: $desktop) {
 			position: absolute;
 			left: 90px;
 			top: 0;
+			width: 719px;
+			height: 100%;
+	
 		}
 	}
 }
