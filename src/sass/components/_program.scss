@@ -1,7 +1,6 @@
 .program{
     background-color: $black-background;
     position: relative;
-
 }
 
 .container{
@@ -250,10 +249,10 @@
     content: '';
     background: url(../images/program/program_img_176.jpg);
     background-repeat: no-repeat;
-    width: 120px;
+    width: calc(100% - 200px);
     height: 137px;
     bottom: -47px;
-    right: 0;
+    left: 200px;
 
     opacity: 0.5;
 
