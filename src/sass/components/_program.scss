@@ -13,7 +13,7 @@
     }
     
     @media screen and (min-width: $desktop) {
-        padding: 60px 30px;
+        padding: 60px 30px 328px 30px;
     }
 }
 
@@ -271,9 +271,9 @@
     background: url(../images/program/program_img_760.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 760px;
+    width: 674px;
     height: 502px;
-    bottom: -200px;
+    top: 700px;
     left: -200px;
     }
 }
