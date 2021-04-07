@@ -177,22 +177,13 @@ header .container {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  width: 100vw;
+  height: 100vh;
   visibility: hidden;
 
   &.is-open {
     visibility: visible;
   }
-}
-
-.mobilemenu {
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
 
   &__logowrapper {
     display: flex;
