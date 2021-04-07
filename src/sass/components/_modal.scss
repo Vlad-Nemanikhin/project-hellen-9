@@ -19,7 +19,7 @@
 
     & > .modal {
       transform: translate(-50%, -50%) scale(1.5);
-      opacity: 0;
+      display: hidden;
       pointer-events: none;
     }
   }
