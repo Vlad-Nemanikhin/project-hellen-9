@@ -1,11 +1,10 @@
 .benefits {
-    padding-top: 0;
-    margin-top: -47px;
-    
+    padding-top: 50px;
+    margin-top: 0;
     background-image: linear-gradient(
-        to bottom,
-        $black-background 68%,
-        $white-color 68%);
+    to bottom,
+    $black-background 68%,
+    $white-color 68%);
         @media screen and (min-width: $tablet){
             margin-top: 0;
             background-image: linear-gradient(
@@ -103,8 +102,8 @@
    
     }
     @media screen and (min-width: $desktop){
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         padding-left: 84px;
         padding-right: 82px;
         z-index: 101;
@@ -122,8 +121,8 @@
         font-size: 20px;
         line-height: 1.4;
         flex-basis: calc(33.33333% - 20px);
-        margin-top: 32px;
-        margin-bottom: 25px;
+        margin-top: 0;
+        margin-bottom: 32px;
     }
     &:before {
         content: counter(item, decimal-leading-zero) " "; 
@@ -179,6 +178,7 @@
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 0;
+        margin-top: 0;
         
     }
 }
