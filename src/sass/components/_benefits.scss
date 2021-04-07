@@ -91,7 +91,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: $white-color;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     @media screen and (min-width: $tablet){
         width: 100%;
     display: flex;
@@ -99,6 +99,7 @@
     padding-left: 78px;
     padding-right: 118px;
     padding-top: 0;
+    padding-bottom: 25px;
    
     }
     @media screen and (min-width: $desktop){
