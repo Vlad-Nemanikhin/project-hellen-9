@@ -1,4 +1,6 @@
 .contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: $main-text;
     background-image: linear-gradient(
         to right,
@@ -46,6 +48,8 @@
     }
 
         @media (min-width: $desktop) {
+        padding-top: 100px;
+        padding-bottom: 62px;
         width: 100%;
         background-image: linear-gradient(
         to right,
