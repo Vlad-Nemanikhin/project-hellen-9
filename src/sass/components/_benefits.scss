@@ -4,24 +4,24 @@
     
     background-image: linear-gradient(
         to bottom,
-        $black-background 66%,
-        $white-color 63%);
+        $black-background 68%,
+        $white-color 68%);
         @media screen and (min-width: $tablet){
             margin-top: 0;
             background-image: linear-gradient(
         to bottom,
-        $black-background 58%,
-        $white-color 58%);
+        $black-background 59%,
+        $white-color 59%);
         padding-top: 111px;
 
         }
         @media screen and (min-width: $desktop){
             background-image: linear-gradient(
         to bottom,
-        $black-background 50%,
-        $white-color 50%);
-        padding-top: 0px;
-        margin-top: -47px;
+        $black-background 58%,
+        $white-color 58%);
+        padding: 35px 82px 35px 84px;
+        
         }
 
 }
@@ -34,7 +34,7 @@
     padding-top: 0;
     
 
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    
 
     @media screen and (min-width: $tablet){
         display: flex;
@@ -59,6 +59,7 @@
     color: $white-color;
     width: 180px;
     margin-bottom: 30px;
+    z-index: 99;
     @media screen and (min-width: $tablet){
         width: 100%;
         text-align: center;
@@ -90,6 +91,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: $white-color;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     @media screen and (min-width: $tablet){
         width: 100%;
     display: flex;
@@ -97,17 +99,19 @@
     padding-left: 78px;
     padding-right: 118px;
     padding-top: 0;
-    padding-bottom: 0;
+   
     }
     @media screen and (min-width: $desktop){
         padding-top: 35px;
         padding-bottom: 35px;
         padding-left: 84px;
         padding-right: 82px;
+        z-index: 101;
     }
 }
 
 .benefits__item {
+    margin-top: 20px;
     @media screen and (min-width: $tablet){
     flex-basis: calc(50% - 20px);
     margin-top: 30px;
@@ -118,7 +122,7 @@
         line-height: 1.4;
         flex-basis: calc(33.33333% - 20px);
         margin-top: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     &:before {
         content: counter(item, decimal-leading-zero) " "; 
@@ -165,7 +169,7 @@
     letter-spacing: 0.08em;
     color: $main-text;
     margin-top: 10px;
-    margin-bottom: 20px;
+    
     @media screen and (min-width: $tablet){
        
     }
@@ -177,3 +181,4 @@
         
     }
 }
+
