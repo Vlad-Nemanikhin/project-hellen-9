@@ -28,6 +28,7 @@
 
 .about__photo {
     max-width: 243px;
+    border-radius: 1%;
     @media screen and (min-width: $desktop){
         max-width: 100%;
             }
