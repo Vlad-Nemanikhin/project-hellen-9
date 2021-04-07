@@ -9,16 +9,18 @@
   background-color: rgba(168, 118, 118, 0.2);
   opacity: 1;
   overflow: hidden;
+  z-index: 1;
 
-  &.is-hidden {
+  &__is-hidden {
     opacity: 0;
     pointer-events: none;
     display: flex;
     align-items: center;
-    transition: opacity var(--animtrans);
 
-    & .modal {
+    & > .modal {
       transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0;
+      pointer-events: none;
     }
   }
 }
