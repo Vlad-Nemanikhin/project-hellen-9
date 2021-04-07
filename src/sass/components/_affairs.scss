@@ -30,6 +30,7 @@
     margin-top: -15px;
     background-color: $white-color;
     cursor: pointer;
+    padding-bottom: 50px;
 
     @media screen and (min-width: $tablet) {
         margin-left: -20px;
@@ -40,6 +41,7 @@
 
     @media screen and (min-width: $desktop) {
         margin-top: -20px;
+        padding-bottom: 130px;
     }
 }
 
