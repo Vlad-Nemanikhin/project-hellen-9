@@ -1,0 +1,122 @@
+.problems {
+  padding-top: 55px;
+  background-image: linear-gradient(to bottom, $black-background 80%, $white-color 80%);
+
+  @media (min-width: 1280px) {
+    position: relative;
+    padding-top: 100px;
+
+    background-image: url('../images/svg/fire-bg.svg'),
+      linear-gradient(to bottom, $black-background 80%, $white-color 80%);
+    background-repeat: no-repeat;
+    background-position: right 0px top 70px, top 0 left 0;
+  }
+}
+
+.problems__title {
+  margin-bottom: 25px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.31;
+  }
+
+  @media (min-width: $desktop) {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.31;
+  }
+}
+
+.problems__title--accent {
+  color: $accent;
+}
+
+.problems__list {
+  counter-reset: problems__list;
+
+  background-color: $white-color;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 30px;
+    padding-right: 110px;
+    padding-left: 96px;
+    margin-bottom: -25px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 70px;
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-bottom: 60px;
+    margin-bottom: -25px;
+  }
+}
+
+.problems__item {
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-basis: (100% / 2);
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: 1280px) {
+    flex-basis: (100% / 3);
+  }
+}
+
+.problems__item::before {
+  content: '—' ' ' ('0' counter(problems__list));
+  counter-increment: problems__list;
+  display: inline-block;
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+
+  color: $accent;
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.problems__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.08em;
+
+  @media (min-width: 768px) {
+    line-height: 1.43;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
