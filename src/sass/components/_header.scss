@@ -164,7 +164,6 @@ header .container {
 .mobilemenu {
   position: absolute;
   margin: 0 auto;
-  padding: 0px 20px auto 20px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -176,6 +175,7 @@ header .container {
   left: 0px;
   right: 0px;
   width: 100vw;
+  bottom: 0;
   height: 100vh;
   visibility: hidden;
   z-index: 50;
@@ -183,17 +183,6 @@ header .container {
   &.is-open {
     visibility: visible;
   }
-}
-
-.mobilemenu {
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
 
   &__logowrapper {
     display: flex;
