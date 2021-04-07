@@ -16,6 +16,11 @@
     }
 }
 
+.footer__logotop {
+    display: flex;
+    align-items: center;
+}
+
 .footer__main {
     display: flex;
     flex-direction: column;
@@ -38,6 +43,7 @@
 .footer__logomain {
     @extend %logo-text;
     color: $main-text;
+    
 }
 
 .footer__logoadd {
@@ -49,6 +55,7 @@
 .footer__logotext {
     @extend %logo-sub;
     color: $main-text;
+    margin-top: 5px;
 }
 
 .logo__icon {
@@ -140,6 +147,10 @@
     font-size: 14px;
     line-height: 28px;
     color: $grey-text;
+
+    @media screen and (max-width: 767px){
+        text-align: center;        
+    }
 
     @media screen and (min-width: $tablet) {
         padding-top: 22px;
