@@ -131,9 +131,9 @@ header .container {
     width: 336px;
     height: 70px;
     margin: 0px 0px 0px 60px;
-    padding: 0px 15px 0px 15px 0px;
+    padding: 0px 15px 0px 15px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.22;
     letter-spacing: 0.08em;
     white-space: nowrap;
@@ -289,7 +289,7 @@ header .container {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.8;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   transition: color $time $function;
 
   & > a:link,
@@ -307,7 +307,7 @@ header .container {
   @extend %button-tablet-mobile;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0);
-  padding: 0px 15px 0px 15px 0px;
+  padding: 0px 15px 0px 15px;
   border: 2px solid $accent;
   color: $accent;
   font-size: 12px;
