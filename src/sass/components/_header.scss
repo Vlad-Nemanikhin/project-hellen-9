@@ -175,8 +175,10 @@ header .container {
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  width: 100vw;
+  height: 100vh;
   visibility: hidden;
+  z-index: 50;
 
   &.is-open {
     visibility: visible;
