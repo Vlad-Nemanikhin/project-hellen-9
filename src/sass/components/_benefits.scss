@@ -1,20 +1,27 @@
 .benefits {
     padding-top: 0;
+    margin-top: -47px;
+    
     background-image: linear-gradient(
         to bottom,
         $black-background 66%,
-        $white-colorf 63%);
+        $white-color 63%);
         @media screen and (min-width: $tablet){
+            margin-top: 0;
             background-image: linear-gradient(
         to bottom,
-        $black-background 45%,
-        $white-color 45%);
+        $black-background 58%,
+        $white-color 58%);
+        padding-top: 111px;
+
         }
         @media screen and (min-width: $desktop){
             background-image: linear-gradient(
         to bottom,
         $black-background 50%,
         $white-color 50%);
+        padding-top: 0px;
+        margin-top: -47px;
         }
 
 }
@@ -23,8 +30,9 @@
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-
+    padding-bottom: 0;
     padding-top: 0;
+    
 
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
@@ -32,9 +40,14 @@
         display: flex;
         max-width: 768px;
         flex-direction: column;
+        padding-bottom: 0;
+        // padding-left: 0;
+        // padding-right: 0;
         }
     @media screen and (min-width: $desktop){
         max-width: 1280px;
+        padding-left: 0;
+        padding-right: 0;
         }
 }
 
@@ -51,9 +64,11 @@
         text-align: center;
         font-size: 26px;
         line-height: 1.307;
+        padding-top: 50px;
     }
     @media screen and (min-width: $desktop){
         visibility: hidden;
+        // display: none;
     }
 }
 
@@ -79,12 +94,14 @@
         width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 98px;
+    padding-left: 78px;
     padding-right: 118px;
+    padding-top: 0;
+    padding-bottom: 0;
     }
     @media screen and (min-width: $desktop){
-        padding-top: 38px;
-        padding-bottom: 38px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         padding-left: 84px;
         padding-right: 82px;
     }
@@ -94,6 +111,7 @@
     @media screen and (min-width: $tablet){
     flex-basis: calc(50% - 20px);
     margin-top: 30px;
+    margin-left: 20px;
     }
     @media screen and (min-width: $desktop){
         font-size: 20px;
@@ -148,7 +166,11 @@
     color: $main-text;
     margin-top: 10px;
     margin-bottom: 20px;
+    @media screen and (min-width: $tablet){
+       
+    }
     @media screen and (min-width: $desktop){
+        
         font-size: 20px;
         line-height: 1.4;
         margin-bottom: 0;
