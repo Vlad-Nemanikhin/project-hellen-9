@@ -1,5 +1,5 @@
 .about {
-    
+    padding-top: 39px;
     padding-bottom: 50px;
     max-width: 480px;
     margin-left: auto;
@@ -7,11 +7,13 @@
     @media screen and (min-width: $tablet){
         display: flex;
         max-width: 768px;
-        padding-bottom: 50px;   
+        padding-bottom: 50px;  
+        padding-top: 50px; 
     }
     @media screen and (min-width: $desktop){
         max-width: 1280px;
         padding-bottom: 130px;
+        padding-top: 95px;
         }
 }
 
