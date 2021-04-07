@@ -171,14 +171,14 @@
                 i < length;
                 i++
               ) {
-                _sliderControls[i].classList.add("slider__control_show");
+                _sliderControls[i].classList.add("slider__control-show");
               }
             }
             _slider.addEventListener("click", function (e) {
               if (e.target.classList.contains("slider__control")) {
                 e.preventDefault();
                 _move(
-                  e.target.classList.contains("slider__control_next")
+                  e.target.classList.contains("slider__control-next")
                     ? "next"
                     : "prev"
                 );
