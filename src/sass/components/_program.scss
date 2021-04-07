@@ -6,14 +6,14 @@
 .program__picture{
     position: relative;
 
-    padding: 50px 24px;
+    padding: 50px 24px 0;
 
     @media screen and (min-width: $tablet) {
         padding: 60px 40px;
     }
     
     @media screen and (min-width: $desktop) {
-        padding: 60px 30px 328px 30px;
+        padding: 60px 30px;
     }
 }
 
@@ -252,7 +252,7 @@
     background-size: contain;
     width: calc(100% - 200px);
     height: 137px;
-    bottom: -47px;
+    bottom: -100px;
     left: 200px;
 
     opacity: 0.5;
