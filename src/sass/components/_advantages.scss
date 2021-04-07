@@ -18,7 +18,6 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -21px;
   }
 
   @media (min-width: $desktop) {
@@ -38,8 +37,7 @@
   }
 
   @media (min-width: $tablet) {
-    flex-basis: calc(100% / 3 - 21px);
-    margin-right: 21px;
+    flex-basis: calc(100% / 3);
   }
 
   @media (min-width: $desktop) {
