@@ -3,18 +3,18 @@
     background-image: linear-gradient(
         to bottom,
         $black-background 66%,
-        #fff 63%);
+        $white-colorf 63%);
         @media screen and (min-width: $tablet){
             background-image: linear-gradient(
         to bottom,
         $black-background 45%,
-        #fff 45%);
+        $white-color 45%);
         }
         @media screen and (min-width: $desktop){
             background-image: linear-gradient(
         to bottom,
         $black-background 50%,
-        #fff 50%);
+        $white-color 50%);
         }
 
 }
@@ -43,7 +43,7 @@
     font-size: 20px;
     line-height: 136%;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $white-color;
     width: 180px;
     margin-bottom: 30px;
     @media screen and (min-width: $tablet){
@@ -74,7 +74,7 @@
     padding-right: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     @media screen and (min-width: $tablet){
         width: 100%;
     display: flex;
