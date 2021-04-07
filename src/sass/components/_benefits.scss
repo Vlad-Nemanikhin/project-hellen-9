@@ -1,15 +1,53 @@
 .benefits {
+    padding-top: 0;
+    margin-top: -47px;
+    
+    background-image: linear-gradient(
+        to bottom,
+        $black-background 66%,
+        $white-color 63%);
+        @media screen and (min-width: $tablet){
+            margin-top: 0;
+            background-image: linear-gradient(
+        to bottom,
+        $black-background 58%,
+        $white-color 58%);
+        padding-top: 111px;
+
+        }
+        @media screen and (min-width: $desktop){
+            background-image: linear-gradient(
+        to bottom,
+        $black-background 50%,
+        $white-color 50%);
+        padding-top: 0px;
+        margin-top: -47px;
+        }
+
+}
+
+.container__ben{
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    top: 5102px;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
     @media screen and (min-width: $tablet){
         display: flex;
         max-width: 768px;
+        flex-direction: column;
+        padding-bottom: 0;
+        // padding-left: 0;
+        // padding-right: 0;
         }
     @media screen and (min-width: $desktop){
         max-width: 1280px;
+        padding-left: 0;
+        padding-right: 0;
         }
 }
 
@@ -18,20 +56,30 @@
     font-size: 20px;
     line-height: 136%;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $white-color;
     width: 180px;
     margin-bottom: 30px;
     @media screen and (min-width: $tablet){
-        width: auto;
+        width: 100%;
         text-align: center;
         font-size: 26px;
         line-height: 1.307;
+        padding-top: 50px;
     }
     @media screen and (min-width: $desktop){
-        display: none;
+        visibility: hidden;
+        // display: none;
     }
 }
 
+.title__wrap{
+    background-color: transparent;
+    @media screen and (min-width: $tablet){
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+}
 
 .benefits__list {
     counter-reset: item;
@@ -41,17 +89,19 @@
     padding-right: 14px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     @media screen and (min-width: $tablet){
         width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 98px;
+    padding-left: 78px;
     padding-right: 118px;
+    padding-top: 0;
+    padding-bottom: 0;
     }
     @media screen and (min-width: $desktop){
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         padding-left: 84px;
         padding-right: 82px;
     }
@@ -61,16 +111,16 @@
     @media screen and (min-width: $tablet){
     flex-basis: calc(50% - 20px);
     margin-top: 30px;
+    margin-left: 20px;
     }
     @media screen and (min-width: $desktop){
         font-size: 20px;
         line-height: 1.4;
         flex-basis: calc(33.33333% - 20px);
         margin-top: 32px;
+        margin-bottom: 20px;
     }
     &:before {
-        /*counter-increment: myCounter;
-        content:counter(myCounter);*/
         content: counter(item, decimal-leading-zero) " "; 
         counter-increment: item;
         font-weight: bold;
@@ -106,38 +156,6 @@
         left: -64px;
         }
 }
-// .benefits__item {
-//     content: counter(level1) " ";
-//     counter-increment: level1;
-//     @media screen and (min-width: $tablet){
-//     flex-basis: calc(50% - 20px);
-//     margin-top: 30px;
-//     }
-//     @media screen and (min-width: $desktop){
-//         font-size: 20px;
-//         line-height: 1.4;
-//         flex-basis: calc(33.33333% - 20px);
-//         margin-top: 32px;
-//     }
-// }
-
-// .benefits__item::marker {
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 1.643;
-//     @media screen and (min-width: $desktop){
-//         font-size: 20px;
-//     }
-// }
-
-// .benefits__item::before {
-//     content: "- ";
-//     width: 20px;
-//     height: 2px;
-   
-//     color: $accent;;
-    
-// }
 
 .benefits__text {
     font-weight: bold;
@@ -148,8 +166,14 @@
     color: $main-text;
     margin-top: 10px;
     margin-bottom: 20px;
+    @media screen and (min-width: $tablet){
+       
+    }
     @media screen and (min-width: $desktop){
+        
         font-size: 20px;
         line-height: 1.4;
+        margin-bottom: 0;
+        
     }
 }

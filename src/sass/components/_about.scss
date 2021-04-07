@@ -1,5 +1,5 @@
 .about {
-    padding-top: 270px;
+    
     padding-bottom: 50px;
     max-width: 480px;
     margin-left: auto;
@@ -7,12 +7,10 @@
     @media screen and (min-width: $tablet){
         display: flex;
         max-width: 768px;
-        padding-top: 302px;
         padding-bottom: 50px;   
     }
     @media screen and (min-width: $desktop){
         max-width: 1280px;
-        padding-top: 329px;
         padding-bottom: 130px;
         }
 }
@@ -30,6 +28,7 @@
 
 .about__photo {
     max-width: 243px;
+    border-radius: 1%;
     @media screen and (min-width: $desktop){
         max-width: 100%;
             }
