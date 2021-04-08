@@ -21,16 +21,21 @@
     margin-bottom: 20px;
     margin-top: 20px;
     @media screen and (min-width: $tablet){
-        margin-top: 30px;
+        margin-top: 0;
+        margin-bottom:0;
         }
         @media screen and (min-width: $desktop){
             margin-top: 50px;
+            
         }
 }
 
 .about__photo {
     max-width: 243px;
     border-radius: 1%;
+    @media screen and (min-width: $tablet){
+        margin-top: 0;
+    }
     @media screen and (min-width: $desktop){
         max-width: 100%;
             }
@@ -54,17 +59,26 @@
     letter-spacing: 0.06em;
     color: $main-text;
     @media screen and (min-width: $tablet){
-        margin-bottom: 34px; 
+        margin-bottom: 0; 
         }
    
    @media screen and (min-width: $desktop){
     margin-left: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.25;
     }
 }
 
+.about__item:not(:first-child):not(:last-child) {
+    @media screen and (min-width: $tablet){
+        margin-bottom: 34px; 
+        margin-top: 34px;
+        }
+        @media screen and (min-width: $desktop){
+            margin-bottom: 30px;
+        }
+}
 .about__item:last-child::after {
     content: " ";
     width: 20px;
@@ -149,6 +163,10 @@
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0.03em;
+    @media screen and (min-width: $tablet){
+        margin-bottom: 30px; 
+        font-size: 26px;
+        }
 
 @media screen and (min-width: $desktop){
     font-size: 46px;
@@ -181,7 +199,7 @@
 .about__text {
     @media screen and (min-width: $tablet){
         margin-left: 40px;
-        margin-top: 30px;
+        // margin-top: 30px;
         width: 402px;
     }
     @media screen and (min-width: $desktop){
