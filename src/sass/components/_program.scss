@@ -90,6 +90,10 @@
     @media screen and (min-width: $tablet) {
         margin-bottom: 30px;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+    }
 }
 
 .program__item:nth-child(1)::before{
@@ -263,6 +267,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 384px;
+    max-width: 384px;
     height: 280px;
     bottom: -110px;
     left: 384px;
@@ -273,6 +278,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 674px;
+    max-width: 674px;
     height: 502px;
     top: 700px;
     left: -200px;
