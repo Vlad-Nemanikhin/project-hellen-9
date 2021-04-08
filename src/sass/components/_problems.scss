@@ -9,7 +9,7 @@
     background-image: url('../images/svg/fire-bg.svg'),
       linear-gradient(to bottom, $black-background 80%, $white-color 80%);
     background-repeat: no-repeat;
-    background-position: right 0px top 70px, top 0 left 0;
+    background-position: right 0px top 100px, top 0 left 0;
   }
 }
 
@@ -29,6 +29,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 70px;
     font-weight: 800;
     font-size: 46px;
     line-height: 1.31;
