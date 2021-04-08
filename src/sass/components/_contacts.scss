@@ -115,37 +115,36 @@
     padding: 23px 40px;
     background: transparent;
     width: 280px;
-    margin-bottom: 30px;
+    
     border-color: $white-color;
     color: $white-color;
 
     &::placeholder {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.22;
     color: $white-color;
   }
     
     @media (min-width: $tablet) {
         width: 390px;
-        margin-bottom: 30px;
+        
     }
     
     @media (min-width: $desktop) {
         width: 478px;
-        margin-bottom: 40px;
+        font-size: 20px;
     }
 }
 
-.contacts__form-item:last-child {
-    margin-bottom: 50px;
-
+.contacts__form-item:not(:last-child) {
+    margin-bottom: 30px;
     @media (min-width: $tablet) {
-        margin-bottom: 31px;
+        margin-bottom: 30px;
     }
-
+    
     @media (min-width: $desktop) {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
 }
 
@@ -175,14 +174,16 @@
     font-size: 12px;
     font-weight: 700;
     cursor: pointer;
-
+    margin-top: 50px;
     @media (min-width: $tablet) {
         padding: 14px 8px;
+        margin-top: 31px;
     }
 
     @media (min-width: $desktop) {
         padding: 27px 25px 26px 26px;
         font-size: 14px;
+        margin-top: 80px;
     }
 
 }

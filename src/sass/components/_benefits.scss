@@ -3,8 +3,8 @@
     margin-top: 0;
     background-image: linear-gradient(
     to bottom,
-    $black-background 68%,
-    $white-color 68%);
+    $black-background 70%,
+    $white-color 70%);
         @media screen and (min-width: $tablet){
             margin-top: 0;
             background-image: linear-gradient(
@@ -67,8 +67,8 @@
         padding-top: 50px;
     }
     @media screen and (min-width: $desktop){
-        visibility: hidden;
-        // display: none;
+        
+        display: none;
     }
 }
 
@@ -91,6 +91,7 @@
     padding-bottom: 20px;
     background-color: $white-color;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    margin-top: -20px;
     @media screen and (min-width: $tablet){
         width: 100%;
     display: flex;
@@ -99,6 +100,8 @@
     padding-right: 118px;
     padding-top: 0;
     padding-bottom: 25px;
+    margin-top: -30px;
+    margin-left: -20px;
    
     }
     @media screen and (min-width: $desktop){
