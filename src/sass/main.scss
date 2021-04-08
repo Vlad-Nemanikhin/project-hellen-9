@@ -10,6 +10,7 @@
 //добавляю шаблоны. Подробности в самом sass файле
 @import './base/templates';
 @import './base/container';
+@import './base/animate';
 @import './components/header';
 @import './components/hero';
 @import './components/advantages';

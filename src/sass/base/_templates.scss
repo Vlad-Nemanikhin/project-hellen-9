@@ -121,13 +121,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-   padding: 14px 1px;
+   padding: 14px 10px;
 
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 15px;
-	letter-spacing: 0.08em;
+	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	max-width:  260px;
 }
 
 //Для nav_link desctop
