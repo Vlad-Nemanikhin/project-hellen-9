@@ -189,6 +189,7 @@ header .container {
     align-items: center;
     justify-content: space-between;
     margin: 30px 0px 50px 0px;
+    padding: 0px 20px 0px 20px;
   }
 
   &__closebutton {
@@ -259,6 +260,7 @@ header .container {
 
 .mobilemenu__navigation {
   margin: 0px 0px 50px 0px;
+  padding: 0px 0px 0px 20px;
 
   @media (min-width: $tablet) {
     margin: 0px auto 50px auto;
