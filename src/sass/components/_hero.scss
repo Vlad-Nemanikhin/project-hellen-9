@@ -9,13 +9,12 @@
 		background-size: cover;
 
 	@media screen and (min-width:$tablet) {
-		padding-bottom: 70px;
+		padding-top: 70px;
+		padding-bottom: 93px;
 		background-image: url("../images/hero/wave-tab.svg");
 		background-repeat: no-repeat;
 		background-position: left bottom;
 		background-size: cover;
-		overflow-x: hidden;
-		padding-top: 0;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -34,7 +33,6 @@
 			margin: 0 auto;
 			width: $tablet;
 			overflow-x: hidden;
-			padding-top: 40px;
 		}
 	}
 
@@ -200,7 +198,7 @@
 			overflow: hidden;
 			margin-left: auto;
 			right: -40px;
-			bottom: 25px;
+			bottom: 0px;
    background-image: url("../images/hero/hero-fon-2.png");
 	background-size: 376px 269px;
 	background-position: left 18px;
@@ -218,8 +216,7 @@
 			align-content: flex-start;
    background-image: url("../images/hero/hero-fon-3.png");
 	background-size: 842px 602px;
-	//background-position: left 31px;
-	background-position: 0 0;
+	background-position: left 31px;
 	background-repeat:no-repeat;
 	width: 842px;
 	height: 718px;
@@ -246,17 +243,11 @@
 			height: 100%;
 		}
 		@media screen and (min-width: $desktop) {
-			//position: absolute;
-			//left: 90px;
-			//top: 0;
-			//width: 719px;
-			//height: 100%;
-	
 			position: absolute;
-			left: 0;
+			left: 90px;
 			top: 0;
-			width: auto;
-			height: auto;
+			width: 719px;
+			height: 100%;
 		}
 	}
 }
