@@ -93,25 +93,24 @@
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
     margin-top: -20px;
     @media screen and (min-width: $tablet){
-        width: 100%;
+        // width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-left: 78px;
     padding-right: 118px;
-    padding-top: 0;
-    padding-bottom: 25px;
-    margin-top: -30px;
-    margin-left: -20px;
+    pading-bottom: 25px;
+    //margin-left: -20px;
    
     }
     @media screen and (min-width: $desktop){
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         padding-left: 84px;
         padding-right: 82px;
         z-index: 101;
-         margin-left: -40px;
-        margin-top: -32px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 30px;
     }
 }
 
